@@ -1,6 +1,19 @@
-# Purpose
+# Introduction
 
-This project will be my first major project in which I specifically do NOT use AI for assistance. If I lack any knowledge needed, I will query google (not including google AI), except for knowledge that is 
-not specifically related to coding, such as how to write in .md format.
+Are you tired of manually estimating your next paycheck as a result of living paycheck to paycheck? Annoyed by the need to factor income taxes and overtime while planning your next vacation? 
 
-The real purpose of this project is to gain valuable experience with programming and project design.
+If so, join the club! I find myself crunching numbers atleast a few times per pay period, and I thought "Why not make something so quick and simple that I'll never need to take time researching federal tax brackets again?"
+
+## Background
+
+The real aim of this project is to attempt my first "professional" project that is not tied to an employer-related project. This is entirely of my own volition, for the purpose of building something for the sake of saying "I built that". As of right now, I consider myself to be fairly new to the programming scene, with less than 3 years of experience under my belt and a handful of ai-guided projects and tools being used by current and past employers.
+
+It's for this reason that I'm writing this readme file by hand- not with a LLM AI, and secondarily, why I'm attempting to write the vast majority of the code myself, with limited AI interaction. There will be slop, and there will be Spaghetti, but it's my sloppy spaghetti soup. 
+
+## Project Purpose 
+
+This project is aimed at becoming a simple app on the iOS and Android play store that will trivialize calculating gross and net income based on annually updated federal and state tax information. Upon filing out information such as employment type, filing status, hourly rate of pay, hours worked, 401k, stock program info, etc, the app will estimate how much money you can expect to bring home on your next paycheck. The best part is that once all questions have been answered the first time, the app will remember that information for next time, meaning it will become much less about looking of the fine details of your employments, and much more about quick information on the go. 
+
+## Future Vision
+
+Eventually, I would like this to also incorporate monthly expenses into the mix to visualize how much money you'll be making vs spending.
