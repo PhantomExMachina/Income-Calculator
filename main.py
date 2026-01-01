@@ -1,12 +1,11 @@
 """
-Unnamed app
-Version 0.1.0
+Income Calculator
 By Matthew Monroe (GhostExMachina)
 """
 
 from file_handler import *
 
-position_type, filing_status = handle()
+position_type, filing_status, pay_cycle = handle()
 
 rate_of_pay = input("How much do you make per hour?\n>: ")
 hours_worked = input("How many hours did you work this week?\n>: ")
@@ -24,3 +23,4 @@ elif position_type == "salary" or position_type == "contractor":
     weekly_income = int(hours_worked) * int(rate_of_pay)
 
     print(f"Gross weekly income: {weekly_income}")
+

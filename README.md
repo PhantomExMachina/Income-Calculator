@@ -14,6 +14,9 @@ It's for this reason that I'm writing this readme file by hand- not with a LLM A
 
 This project is aimed at becoming a simple app on the iOS and Android play store that will trivialize calculating gross and net income based on annually updated federal and state tax information. Upon filing out information such as employment type, filing status, hourly rate of pay, hours worked, 401k, stock program info, etc, the app will estimate how much money you can expect to bring home on your next paycheck. The best part is that once all questions have been answered the first time, the app will remember that information for next time, meaning it will become much less about looking of the fine details of your employments, and much more about quick information on the go. 
 
-## Future Vision
+## Roadmap
 
-Eventually, I would like this to also incorporate monthly expenses into the mix to visualize how much money you'll be making vs spending.
+- Support most different types of pay cycles (weekly, monthly, semi-monthly, contractor-friendly cycles, etc)
+- Factor in state level income tax brackets
+- Factor in overtime laws by state (double-time states)
+- Allow users to keep track of regularly-occurring monthly expenses

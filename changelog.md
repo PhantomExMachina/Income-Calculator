@@ -16,4 +16,17 @@ Initial Working Version
 - Added __pycache__ to .gitignore
 
 ## 0.2.2 - 2025-12-31
-- Updated readme to be more realistic and a bit more organized.
+- Updated readme to be more realistic and a bit more organized
+
+## 0.3.0 - 2025-12-31
+- Extended file handler to also check for and include pay cycle information
+- Removed versioning from main.py
+- Added a docstring to file_handler.p
+- Corrected a syntax error in file_handler.py that may have led to a crash when handling contractors
+- Corrected a logical error in file_handler.py that may cause issues with weekly vs bi-weekly and monthly vs semi-monthly checks
+- Corrected a typo in file_handler.py: ":> " -> ">: 
+- Added bracket_calc.py (unfinished) to calculate esteimated withheld funds based on annualized cycle income.
+- Renamed brackets.json to federal_income_brackets.json for better readability
+- Added state_income_brackets.json (unfinished)
+- Added a todo list for me to keep track of (included in .gitignore)
+- Added a roadmap to README.md
