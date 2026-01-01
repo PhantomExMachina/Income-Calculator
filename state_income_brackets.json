@@ -1,0 +1,942 @@
+{
+  "States": [
+    {
+      "name": "alabama",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 500, "rate": 0.02},
+        {"min": 501, "max": 3000, "rate": 0.04},
+        {"min": 3001, "max": null, "rate": 0.05}
+      ],
+      "married": [
+        {"min": 0, "max": 1000, "rate": 0.02},
+        {"min": 1001, "max": 6000, "rate": 0.04},
+        {"min": 6001, "max": null, "rate": 0.05}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 500, "rate": 0.02},
+        {"min": 501, "max": 3000, "rate": 0.04},
+        {"min": 3001, "max": null, "rate": 0.05}
+      ]
+    },
+    {
+      "name": "alaska",
+      "type": "none"
+    },
+    {
+      "name": "arizona",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.025}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.025}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.025}
+      ]
+    },
+    {
+      "name": "arkansas",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 4500, "rate": 0.02},
+        {"min": 4501, "max": null, "rate": 0.039}
+      ],
+      "married": [
+        {"min": 0, "max": 9000, "rate": 0.02},
+        {"min": 9001, "max": null, "rate": 0.039}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 4500, "rate": 0.02},
+        {"min": 4501, "max": null, "rate": 0.039}
+      ]
+    },
+    {
+      "name": "california",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 10756, "rate": 0.01},
+        {"min": 10757, "max": 25499, "rate": 0.02},
+        {"min": 25500, "max": 40245, "rate": 0.04},
+        {"min": 40246, "max": 55866, "rate": 0.06},
+        {"min": 55867, "max": 70606, "rate": 0.08},
+        {"min": 70607, "max": 360659, "rate": 0.093},
+        {"min": 360660, "max": 432787, "rate": 0.103},
+        {"min": 432788, "max": 721314, "rate": 0.113},
+        {"min": 721315, "max": 1000000, "rate": 0.123},
+        {"min": 1000001, "max": null, "rate": 0.133}
+      ],
+      "married": [
+        {"min": 0, "max": 21512, "rate": 0.01},
+        {"min": 21513, "max": 50998, "rate": 0.02},
+        {"min": 50999, "max": 80490, "rate": 0.04},
+        {"min": 80491, "max": 111732, "rate": 0.06},
+        {"min": 111733, "max": 141212, "rate": 0.08},
+        {"min": 141213, "max": 721318, "rate": 0.093},
+        {"min": 721319, "max": 865574, "rate": 0.103},
+        {"min": 865575, "max": 1442628, "rate": 0.113},
+        {"min": 1000000, "max": null, "rate": 0.133}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 21512, "rate": 0.01},
+        {"min": 21513, "max": 50998, "rate": 0.02},
+        {"min": 50999, "max": 80490, "rate": 0.04},
+        {"min": 80491, "max": 111732, "rate": 0.06},
+        {"min": 111733, "max": 141212, "rate": 0.08},
+        {"min": 141213, "max": 721318, "rate": 0.093},
+        {"min": 721319, "max": 865574, "rate": 0.103},
+        {"min": 865575, "max": 1442628, "rate": 0.113},
+        {"min": 1000000, "max": null, "rate": 0.133}
+      ]
+    },
+    {
+      "name": "colorado",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.044}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.044}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.044}
+      ]
+    },
+    {
+      "name": "connecticut",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 10000, "rate": 0.02},
+        {"min": 10001, "max": 50000, "rate": 0.045},
+        {"min": 50001, "max": 100000, "rate": 0.055},
+        {"min": 100001, "max": 200000, "rate": 0.06},
+        {"min": 200001, "max": 250000, "rate": 0.065},
+        {"min": 250001, "max": 500000, "rate": 0.069},
+        {"min": 500001, "max": null, "rate": 0.0699}
+      ],
+      "married": [
+        {"min": 0, "max": 20000, "rate": 0.02},
+        {"min": 20001, "max": 100000, "rate": 0.045},
+        {"min": 100001, "max": 200000, "rate": 0.055},
+        {"min": 200001, "max": 400000, "rate": 0.06},
+        {"min": 400001, "max": 500000, "rate": 0.065},
+        {"min": 500001, "max": 1000000, "rate": 0.069},
+        {"min": 1000001, "max": null, "rate": 0.0699}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 10000, "rate": 0.02},
+        {"min": 10001, "max": 50000, "rate": 0.045},
+        {"min": 50001, "max": 100000, "rate": 0.055},
+        {"min": 100001, "max": 200000, "rate": 0.06},
+        {"min": 200001, "max": 250000, "rate": 0.065},
+        {"min": 250001, "max": 500000, "rate": 0.069},
+        {"min": 500001, "max": null, "rate": 0.0699}
+      ]
+    },
+    {
+      "name": "delaware",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 2000, "rate": 0.022},
+        {"min": 2001, "max": 5000, "rate": 0.039},
+        {"min": 5001, "max": 10000, "rate": 0.048},
+        {"min": 10001, "max": 25000, "rate": 0.052},
+        {"min": 25001, "max": 60000, "rate": 0.0555},
+        {"min": 60001, "max": null, "rate": 0.066}
+      ],
+      "married": [
+        {"min": 0, "max": 2000, "rate": 0.022},
+        {"min": 2001, "max": 5000, "rate": 0.039},
+        {"min": 5001, "max": 10000, "rate": 0.048},
+        {"min": 10001, "max": 25000, "rate": 0.052},
+        {"min": 25001, "max": 60000, "rate": 0.0555},
+        {"min": 60001, "max": null, "rate": 0.066}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 2000, "rate": 0.022},
+        {"min": 2001, "max": 5000, "rate": 0.039},
+        {"min": 5001, "max": 10000, "rate": 0.048},
+        {"min": 10001, "max": 25000, "rate": 0.052},
+        {"min": 25001, "max": 60000, "rate": 0.0555},
+        {"min": 60001, "max": null, "rate": 0.066}
+      ]
+    },
+    {
+      "name": "florida",
+      "type": "none"
+    },
+    {
+      "name": "georgia",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.0539}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.0539}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.0539}
+      ]
+    },
+    {
+      "name": "hawaii",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 9600, "rate": 0.014},
+        {"min": 9601, "max": 14400, "rate": 0.032},
+        {"min": 14401, "max": 19200, "rate": 0.055},
+        {"min": 19201, "max": 24000, "rate": 0.064},
+        {"min": 24001, "max": 36000, "rate": 0.072},
+        {"min": 36001, "max": 48000, "rate": 0.076},
+        {"min": 48001, "max": 125000, "rate": 0.079},
+        {"min": 125001, "max": 175000, "rate": 0.0825},
+        {"min": 175001, "max": 225000, "rate": 0.09},
+        {"min": 225001, "max": 275000, "rate": 0.10},
+        {"min": 275001, "max": 325000, "rate": 0.11},
+        {"min": 325001, "max": null, "rate": 0.11}
+      ],
+      "married": [
+        {"min": 0, "max": 19200, "rate": 0.014},
+        {"min": 19201, "max": 28800, "rate": 0.032},
+        {"min": 28801, "max": 38400, "rate": 0.055},
+        {"min": 38401, "max": 48000, "rate": 0.064},
+        {"min": 48001, "max": 72000, "rate": 0.072},
+        {"min": 72001, "max": 96000, "rate": 0.076},
+        {"min": 96001, "max": 250000, "rate": 0.079},
+        {"min": 250001, "max": 350000, "rate": 0.0825},
+        {"min": 350001, "max": 450000, "rate": 0.09},
+        {"min": 450001, "max": 550000, "rate": 0.10},
+        {"min": 550001, "max": 650000, "rate": 0.11},
+        {"min": 650001, "max": null, "rate": 0.11}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 14400, "rate": 0.014},
+        {"min": 14401, "max": 21600, "rate": 0.032},
+        {"min": 21601, "max": 28800, "rate": 0.055},
+        {"min": 28801, "max": 36000, "rate": 0.064},
+        {"min": 36001, "max": 54000, "rate": 0.072},
+        {"min": 54001, "max": 72000, "rate": 0.076},
+        {"min": 72001, "max": 187500, "rate": 0.079},
+        {"min": 187501, "max": 262500, "rate": 0.0825},
+        {"min": 262501, "max": 337500, "rate": 0.09},
+        {"min": 337501, "max": 412500, "rate": 0.10},
+        {"min": 412501, "max": 487500, "rate": 0.11},
+        {"min": 487501, "max": null, "rate": 0.11}
+      ]
+    },
+    {
+      "name": "idaho",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": 4673, "rate": 0.0},
+        {"min": 4674, "max": null, "rate": 0.05695}
+      ],
+      "married": [
+        {"min": 0, "max": 9346, "rate": 0.0},
+        {"min": 9347, "max": null, "rate": 0.05695}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 4673, "rate": 0.0},
+        {"min": 4674, "max": null, "rate": 0.05695}
+      ]
+    },
+    {
+      "name": "illinois",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.0495}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.0495}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.0495}
+      ]
+    },
+    {
+      "name": "indiana",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.03}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.03}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.03}
+      ]
+    },
+    {
+      "name": "iowa",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.038}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.038}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.038}
+      ]
+    },
+    {
+      "name": "kansas",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 23000, "rate": 0.052},
+        {"min": 23001, "max": null, "rate": 0.0558}
+      ],
+      "married": [
+        {"min": 0, "max": 46000, "rate": 0.052},
+        {"min": 46001, "max": null, "rate": 0.0558}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 23000, "rate": 0.052},
+        {"min": 23001, "max": null, "rate": 0.0558}
+      ]
+    },
+    {
+      "name": "kentucky",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.04}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.04}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.04}
+      ]
+    },
+    {
+      "name": "louisiana",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.03}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.03}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.03}
+      ]
+    },
+    {
+      "name": "maine",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 26800, "rate": 0.058},
+        {"min": 26801, "max": 63450, "rate": 0.0675},
+        {"min": 63451, "max": null, "rate": 0.0715}
+      ],
+      "married": [
+        {"min": 0, "max": 53600, "rate": 0.058},
+        {"min": 53601, "max": 126900, "rate": 0.0675},
+        {"min": 126901, "max": null, "rate": 0.0715}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 26800, "rate": 0.058},
+        {"min": 26801, "max": 63450, "rate": 0.0675},
+        {"min": 63451, "max": null, "rate": 0.0715}
+      ]
+    },
+    {
+      "name": "maryland",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 1000, "rate": 0.02},
+        {"min": 1001, "max": 2000, "rate": 0.03},
+        {"min": 2001, "max": 3000, "rate": 0.04},
+        {"min": 3001, "max": 100000, "rate": 0.0475},
+        {"min": 100001, "max": 125000, "rate": 0.05},
+        {"min": 125001, "max": 150000, "rate": 0.0525},
+        {"min": 150001, "max": 250000, "rate": 0.055},
+        {"min": 250001, "max": null, "rate": 0.0575}
+      ],
+      "married": [
+        {"min": 0, "max": 1000, "rate": 0.02},
+        {"min": 1001, "max": 2000, "rate": 0.03},
+        {"min": 2001, "max": 3000, "rate": 0.04},
+        {"min": 3001, "max": 150000, "rate": 0.0475},
+        {"min": 150001, "max": 175000, "rate": 0.05},
+        {"min": 175001, "max": 200000, "rate": 0.0525},
+        {"min": 200001, "max": 300000, "rate": 0.055},
+        {"min": 300001, "max": null, "rate": 0.0575}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 1000, "rate": 0.02},
+        {"min": 1001, "max": 2000, "rate": 0.03},
+        {"min": 2001, "max": 3000, "rate": 0.04},
+        {"min": 3001, "max": 100000, "rate": 0.0475},
+        {"min": 100001, "max": 125000, "rate": 0.05},
+        {"min": 125001, "max": 150000, "rate": 0.0525},
+        {"min": 150001, "max": 250000, "rate": 0.055},
+        {"min": 250001, "max": null, "rate": 0.0575}
+      ]
+    },
+    {
+      "name": "massachusetts",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 1083150, "rate": 0.05},
+        {"min": 1083151, "max": null, "rate": 0.09}
+      ],
+      "married": [
+        {"min": 0, "max": 1083150, "rate": 0.05},
+        {"min": 1083151, "max": null, "rate": 0.09}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 1083150, "rate": 0.05},
+        {"min": 1083151, "max": null, "rate": 0.09}
+      ]
+    },
+    {
+      "name": "michigan",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.0425}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.0425}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.0425}
+      ]
+    },
+    {
+      "name": "minnesota",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 32570, "rate": 0.0535},
+        {"min": 32571, "max": 106990, "rate": 0.068},
+        {"min": 106991, "max": 198630, "rate": 0.0785},
+        {"min": 198631, "max": null, "rate": 0.0985}
+      ],
+      "married": [
+        {"min": 0, "max": 65140, "rate": 0.0535},
+        {"min": 65141, "max": 213980, "rate": 0.068},
+        {"min": 213981, "max": 397260, "rate": 0.0785},
+        {"min": 397261, "max": null, "rate": 0.0985}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 48860, "rate": 0.0535},
+        {"min": 48861, "max": 160485, "rate": 0.068},
+        {"min": 160486, "max": 297945, "rate": 0.0785},
+        {"min": 297946, "max": null, "rate": 0.0985}
+      ]
+    },
+    {
+      "name": "mississippi",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 10000, "rate": 0.0},
+        {"min": 10001, "max": null, "rate": 0.044}
+      ],
+      "married": [
+        {"min": 0, "max": 10000, "rate": 0.0},
+        {"min": 10001, "max": null, "rate": 0.044}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 10000, "rate": 0.0},
+        {"min": 10001, "max": null, "rate": 0.044}
+      ]
+    },
+    {
+      "name": "missouri",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 1313, "rate": 0.02},
+        {"min": 1314, "max": 2626, "rate": 0.025},
+        {"min": 2627, "max": 3939, "rate": 0.03},
+        {"min": 3940, "max": 5252, "rate": 0.035},
+        {"min": 5253, "max": 6565, "rate": 0.04},
+        {"min": 6566, "max": 7878, "rate": 0.045},
+        {"min": 7879, "max": 9191, "rate": 0.047},
+        {"min": 9192, "max": null, "rate": 0.047}
+      ],
+      "married": [
+        {"min": 0, "max": 1313, "rate": 0.02},
+        {"min": 1314, "max": 2626, "rate": 0.025},
+        {"min": 2627, "max": 3939, "rate": 0.03},
+        {"min": 3940, "max": 5252, "rate": 0.035},
+        {"min": 5253, "max": 6565, "rate": 0.04},
+        {"min": 6566, "max": 7878, "rate": 0.045},
+        {"min": 7879, "max": 9191, "rate": 0.047},
+        {"min": 9192, "max": null, "rate": 0.047}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 1313, "rate": 0.02},
+        {"min": 1314, "max": 2626, "rate": 0.025},
+        {"min": 2627, "max": 3939, "rate": 0.03},
+        {"min": 3940, "max": 5252, "rate": 0.035},
+        {"min": 5253, "max": 6565, "rate": 0.04},
+        {"min": 6566, "max": 7878, "rate": 0.045},
+        {"min": 7879, "max": 9191, "rate": 0.047},
+        {"min": 9192, "max": null, "rate": 0.047}
+      ]
+    },
+    {
+      "name": "montana",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 21100, "rate": 0.047},
+        {"min": 21101, "max": null, "rate": 0.059}
+      ],
+      "married": [
+        {"min": 0, "max": 21100, "rate": 0.047},
+        {"min": 21101, "max": null, "rate": 0.059}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 21100, "rate": 0.047},
+        {"min": 21101, "max": null, "rate": 0.059}
+      ]
+    },
+    {
+      "name": "nebraska",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 4030, "rate": 0.0246},
+        {"min": 4031, "max": 24120, "rate": 0.0351},
+        {"min": 24121, "max": 38870, "rate": 0.0501},
+        {"min": 38871, "max": null, "rate": 0.052}
+      ],
+      "married": [
+        {"min": 0, "max": 8060, "rate": 0.0246},
+        {"min": 8061, "max": 48240, "rate": 0.0351},
+        {"min": 48241, "max": 77740, "rate": 0.0501},
+        {"min": 77741, "max": null, "rate": 0.052}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 4030, "rate": 0.0246},
+        {"min": 4031, "max": 24120, "rate": 0.0351},
+        {"min": 24121, "max": 38870, "rate": 0.0501},
+        {"min": 38871, "max": null, "rate": 0.052}
+      ]
+    },
+    {
+      "name": "nevada",
+      "type": "none"
+    },
+    {
+      "name": "new hampshire",
+      "type": "none"
+    },
+    {
+      "name": "new jersey",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 20000, "rate": 0.014},
+        {"min": 20001, "max": 35000, "rate": 0.0175},
+        {"min": 35001, "max": 40000, "rate": 0.035},
+        {"min": 40001, "max": 75000, "rate": 0.05525},
+        {"min": 75001, "max": 500000, "rate": 0.0637},
+        {"min": 500001, "max": 1000000, "rate": 0.0897},
+        {"min": 1000001, "max": null, "rate": 0.1075}
+      ],
+      "married": [
+        {"min": 0, "max": 20000, "rate": 0.014},
+        {"min": 20001, "max": 50000, "rate": 0.0175},
+        {"min": 50001, "max": 70000, "rate": 0.0245},
+        {"min": 70001, "max": 80000, "rate": 0.035},
+        {"min": 80001, "max": 150000, "rate": 0.05525},
+        {"min": 150001, "max": 500000, "rate": 0.0637},
+        {"min": 500001, "max": 1000000, "rate": 0.0897},
+        {"min": 1000001, "max": null, "rate": 0.1075}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 20000, "rate": 0.014},
+        {"min": 20001, "max": 35000, "rate": 0.0175},
+        {"min": 35001, "max": 40000, "rate": 0.035},
+        {"min": 40001, "max": 75000, "rate": 0.05525},
+        {"min": 75001, "max": 500000, "rate": 0.0637},
+        {"min": 500001, "max": 1000000, "rate": 0.0897},
+        {"min": 1000001, "max": null, "rate": 0.1075}
+      ]
+    },
+    {
+      "name": "new mexico",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 5500, "rate": 0.015},
+        {"min": 5501, "max": 16500, "rate": 0.032},
+        {"min": 16501, "max": 33500, "rate": 0.043},
+        {"min": 33501, "max": 66500, "rate": 0.047},
+        {"min": 66501, "max": 210000, "rate": 0.049},
+        {"min": 210001, "max": null, "rate": 0.059}
+      ],
+      "married": [
+        {"min": 0, "max": 11000, "rate": 0.015},
+        {"min": 11001, "max": 33000, "rate": 0.032},
+        {"min": 33001, "max": 67000, "rate": 0.043},
+        {"min": 67001, "max": 133000, "rate": 0.047},
+        {"min": 133001, "max": 420000, "rate": 0.049},
+        {"min": 420001, "max": null, "rate": 0.059}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 5500, "rate": 0.015},
+        {"min": 5501, "max": 16500, "rate": 0.032},
+        {"min": 16501, "max": 33500, "rate": 0.043},
+        {"min": 33501, "max": 66500, "rate": 0.047},
+        {"min": 66501, "max": 210000, "rate": 0.049},
+        {"min": 210001, "max": null, "rate": 0.059}
+      ]
+    },
+    {
+      "name": "new york",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 8500, "rate": 0.04},
+        {"min": 8501, "max": 11700, "rate": 0.045},
+        {"min": 11701, "max": 13900, "rate": 0.0525},
+        {"min": 13901, "max": 80650, "rate": 0.055},
+        {"min": 80651, "max": 215400, "rate": 0.0685},
+        {"min": 215401, "max": 1077550, "rate": 0.0965},
+        {"min": 1077551, "max": 5000000, "rate": 0.103},
+        {"min": 5000001, "max": 25000000, "rate": 0.109},
+        {"min": 25000001, "max": null, "rate": 0.109}
+      ],
+      "married": [
+        {"min": 0, "max": 17150, "rate": 0.04},
+        {"min": 17151, "max": 23600, "rate": 0.045},
+        {"min": 23601, "max": 27900, "rate": 0.0525},
+        {"min": 27901, "max": 161550, "rate": 0.055},
+        {"min": 161551, "max": 323200, "rate": 0.0685},
+        {"min": 323201, "max": 2155350, "rate": 0.0965},
+        {"min": 2155351, "max": 5000000, "rate": 0.103},
+        {"min": 5000001, "max": 25000000, "rate": 0.109},
+        {"min": 25000001, "max": null, "rate": 0.109}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 12800, "rate": 0.04},
+        {"min": 12801, "max": 11700, "rate": 0.045},
+        {"min": 11701, "max": 13900, "rate": 0.0525},
+        {"min": 13901, "max": 80650, "rate": 0.055},
+        {"min": 80651, "max": 215400, "rate": 0.0685},
+        {"min": 215401, "max": 1077550, "rate": 0.0965},
+        {"min": 1077551, "max": 5000000, "rate": 0.103},
+        {"min": 5000001, "max": 25000000, "rate": 0.109},
+        {"min": 25000001, "max": null, "rate": 0.109}
+      ]
+    },
+    {
+      "name": "north carolina",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.0425}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.0425}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.0425}
+      ]
+    },
+    {
+      "name": "north dakota",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 47150, "rate": 0.0},
+        {"min": 47151, "max": 238200, "rate": 0.0195},
+        {"min": 238201, "max": null, "rate": 0.025}
+      ],
+      "married": [
+        {"min": 0, "max": 78775, "rate": 0.0},
+        {"min": 78776, "max": 289975, "rate": 0.0195},
+        {"min": 289976, "max": null, "rate": 0.025}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 63175, "rate": 0.0},
+        {"min": 63176, "max": 264100, "rate": 0.0195},
+        {"min": 264101, "max": null, "rate": 0.025}
+      ]
+    },
+    {
+      "name": "ohio",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 26050, "rate": 0.0},
+        {"min": 26051, "max": 100000, "rate": 0.0275},
+        {"min": 100001, "max": null, "rate": 0.035}
+      ],
+      "married": [
+        {"min": 0, "max": 26050, "rate": 0.0},
+        {"min": 26051, "max": 100000, "rate": 0.0275},
+        {"min": 100001, "max": null, "rate": 0.035}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 26050, "rate": 0.0},
+        {"min": 26051, "max": 100000, "rate": 0.0275},
+        {"min": 100001, "max": null, "rate": 0.035}
+      ]
+    },
+    {
+      "name": "oklahoma",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 1000, "rate": 0.0025},
+        {"min": 1001, "max": 2500, "rate": 0.0075},
+        {"min": 2501, "max": 3750, "rate": 0.0175},
+        {"min": 3751, "max": 4900, "rate": 0.0275},
+        {"min": 4901, "max": 7200, "rate": 0.0375},
+        {"min": 7201, "max": null, "rate": 0.0475}
+      ],
+      "married": [
+        {"min": 0, "max": 2000, "rate": 0.0025},
+        {"min": 2001, "max": 5000, "rate": 0.0075},
+        {"min": 5001, "max": 7500, "rate": 0.0175},
+        {"min": 7501, "max": 9800, "rate": 0.0275},
+        {"min": 9801, "max": 14400, "rate": 0.0375},
+        {"min": 14401, "max": null, "rate": 0.0475}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 1500, "rate": 0.0025},
+        {"min": 1501, "max": 3750, "rate": 0.0075},
+        {"min": 3751, "max": 5625, "rate": 0.0175},
+        {"min": 5626, "max": 7350, "rate": 0.0275},
+        {"min": 7351, "max": 10800, "rate": 0.0375},
+        {"min": 10801, "max": null, "rate": 0.0475}
+      ]
+    },
+    {
+      "name": "oregon",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 4400, "rate": 0.0475},
+        {"min": 4401, "max": 11050, "rate": 0.0675},
+        {"min": 11051, "max": 125000, "rate": 0.0875},
+        {"min": 125001, "max": null, "rate": 0.099}
+      ],
+      "married": [
+        {"min": 0, "max": 8800, "rate": 0.0475},
+        {"min": 8801, "max": 22100, "rate": 0.0675},
+        {"min": 22101, "max": 250000, "rate": 0.0875},
+        {"min": 250001, "max": null, "rate": 0.099}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 4400, "rate": 0.0475},
+        {"min": 4401, "max": 11050, "rate": 0.0675},
+        {"min": 11051, "max": 125000, "rate": 0.0875},
+        {"min": 125001, "max": null, "rate": 0.099}
+      ]
+    },
+    {
+      "name": "pennsylvania",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.0307}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.0307}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.0307}
+      ]
+    },
+    {
+      "name": "rhode island",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 79900, "rate": 0.0375},
+        {"min": 79901, "max": 181650, "rate": 0.0475},
+        {"min": 181651, "max": null, "rate": 0.0599}
+      ],
+      "married": [
+        {"min": 0, "max": 159800, "rate": 0.0375},
+        {"min": 159801, "max": 363300, "rate": 0.0475},
+        {"min": 363301, "max": null, "rate": 0.0599}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 79900, "rate": 0.0375},
+        {"min": 79901, "max": 181650, "rate": 0.0475},
+        {"min": 181651, "max": null, "rate": 0.0599}
+      ]
+    },
+    {
+      "name": "south carolina",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 3560, "rate": 0.0},
+        {"min": 3561, "max": 17830, "rate": 0.03},
+        {"min": 17831, "max": null, "rate": 0.062}
+      ],
+      "married": [
+        {"min": 0, "max": 7120, "rate": 0.0},
+        {"min": 7121, "max": 35660, "rate": 0.03},
+        {"min": 35661, "max": null, "rate": 0.062}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 3560, "rate": 0.0},
+        {"min": 3561, "max": 17830, "rate": 0.03},
+        {"min": 17831, "max": null, "rate": 0.062}
+      ]
+    },
+    {
+      "name": "south dakota",
+      "type": "none"
+    },
+    {
+      "name": "tennessee",
+      "type": "none"
+    },
+    {
+      "name": "texas",
+      "type": "none"
+    },
+    {
+      "name": "utah",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": null, "rate": 0.0455}
+      ],
+      "married": [
+        {"min": 0, "max": null, "rate": 0.0455}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": null, "rate": 0.0455}
+      ]
+    },
+    {
+      "name": "vermont",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 47900, "rate": 0.0335},
+        {"min": 47901, "max": 116000, "rate": 0.066},
+        {"min": 116001, "max": 242000, "rate": 0.076},
+        {"min": 242001, "max": null, "rate": 0.0875}
+      ],
+      "married": [
+        {"min": 0, "max": 95800, "rate": 0.0335},
+        {"min": 95801, "max": 232000, "rate": 0.066},
+        {"min": 232001, "max": 484000, "rate": 0.076},
+        {"min": 484001, "max": null, "rate": 0.0875}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 47900, "rate": 0.0335},
+        {"min": 47901, "max": 116000, "rate": 0.066},
+        {"min": 116001, "max": 242000, "rate": 0.076},
+        {"min": 242001, "max": null, "rate": 0.0875}
+      ]
+    },
+    {
+      "name": "virginia",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 3000, "rate": 0.02},
+        {"min": 3001, "max": 5000, "rate": 0.03},
+        {"min": 5001, "max": 17000, "rate": 0.05},
+        {"min": 17001, "max": null, "rate": 0.0575}
+      ],
+      "married": [
+        {"min": 0, "max": 6000, "rate": 0.02},
+        {"min": 6001, "max": 10000, "rate": 0.03},
+        {"min": 10001, "max": 34000, "rate": 0.05},
+        {"min": 34001, "max": null, "rate": 0.0575}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 3000, "rate": 0.02},
+        {"min": 3001, "max": 5000, "rate": 0.03},
+        {"min": 5001, "max": 17000, "rate": 0.05},
+        {"min": 17001, "max": null, "rate": 0.0575}
+      ]
+    },
+    {
+      "name": "washington",
+      "type": "flat",
+      "single": [
+        {"min": 0, "max": 250000, "rate": 0.0},
+        {"min": 250001, "max": null, "rate": 0.07}
+      ],
+      "married": [
+        {"min": 0, "max": 500000, "rate": 0.0},
+        {"min": 500001, "max": null, "rate": 0.07}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 250000, "rate": 0.0},
+        {"min": 250001, "max": null, "rate": 0.07}
+      ]
+    },
+    {
+      "name": "west virginia",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 10000, "rate": 0.0222},
+        {"min": 10001, "max": 25000, "rate": 0.0296},
+        {"min": 25001, "max": 40000, "rate": 0.0333},
+        {"min": 40001, "max": 60000, "rate": 0.0444},
+        {"min": 60001, "max": null, "rate": 0.0482}
+      ],
+      "married": [
+        {"min": 0, "max": 20000, "rate": 0.0222},
+        {"min": 20001, "max": 50000, "rate": 0.0296},
+        {"min": 50001, "max": 80000, "rate": 0.0333},
+        {"min": 80001, "max": 120000, "rate": 0.0444},
+        {"min": 120001, "max": null, "rate": 0.0482}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 10000, "rate": 0.0222},
+        {"min": 10001, "max": 25000, "rate": 0.0296},
+        {"min": 25001, "max": 40000, "rate": 0.0333},
+        {"min": 40001, "max": 60000, "rate": 0.0444},
+        {"min": 60001, "max": null, "rate": 0.0482}
+      ]
+    },
+    {
+      "name": "wisconsin",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 14680, "rate": 0.035},
+        {"min": 14681, "max": 29370, "rate": 0.044},
+        {"min": 29371, "max": 323290, "rate": 0.053},
+        {"min": 323291, "max": null, "rate": 0.0765}
+      ],
+      "married": [
+        {"min": 0, "max": 29360, "rate": 0.035},
+        {"min": 29361, "max": 58740, "rate": 0.044},
+        {"min": 58741, "max": 646580, "rate": 0.053},
+        {"min": 646581, "max": null, "rate": 0.0765}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 14680, "rate": 0.035},
+        {"min": 14681, "max": 29370, "rate": 0.044},
+        {"min": 29371, "max": 323290, "rate": 0.053},
+        {"min": 323291, "max": null, "rate": 0.0765}
+      ]
+    },
+    {
+      "name": "wyoming",
+      "type": "none"
+    },
+    {
+      "name": "district of columbia",
+      "type": "progressive",
+      "single": [
+        {"min": 0, "max": 10000, "rate": 0.04},
+        {"min": 10001, "max": 40000, "rate": 0.06},
+        {"min": 40001, "max": 60000, "rate": 0.065},
+        {"min": 60001, "max": 250000, "rate": 0.085},
+        {"min": 250001, "max": 500000, "rate": 0.0925},
+        {"min": 500001, "max": 1000000, "rate": 0.0975},
+        {"min": 1000001, "max": null, "rate": 0.1075}
+      ],
+      "married": [
+        {"min": 0, "max": 10000, "rate": 0.04},
+        {"min": 10001, "max": 40000, "rate": 0.06},
+        {"min": 40001, "max": 60000, "rate": 0.065},
+        {"min": 60001, "max": 250000, "rate": 0.085},
+        {"min": 250001, "max": 500000, "rate": 0.0925},
+        {"min": 500001, "max": 1000000, "rate": 0.0975},
+        {"min": 1000001, "max": null, "rate": 0.1075}
+      ],
+      "head_of_household": [
+        {"min": 0, "max": 10000, "rate": 0.04},
+        {"min": 10001, "max": 40000, "rate": 0.06},
+        {"min": 40001, "max": 60000, "rate": 0.065},
+        {"min": 60001, "max": 250000, "rate": 0.085},
+        {"min": 250001, "max": 500000, "rate": 0.0925},
+        {"min": 500001, "max": 1000000, "rate": 0.0975},
+        {"min": 1000001, "max": null, "rate": 0.1075}
+      ]
+    }
+  ]
+}

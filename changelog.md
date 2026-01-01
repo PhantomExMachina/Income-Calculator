@@ -30,3 +30,8 @@ Initial Working Version
 - Added state_income_brackets.json (unfinished)
 - Added a todo list for me to keep track of (included in .gitignore)
 - Added a roadmap to README.md
+
+## 0.3.1 - 2025-12-31
+- Created utils.py
+- Refactored main.py, moved input logic and conditional logic to utils.py
+- Finished state_income_brackets.json (Giving chatgpt the credit for this. WAY too much repetitive typing for my taste.)
