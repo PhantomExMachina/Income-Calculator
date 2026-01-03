@@ -4,9 +4,9 @@ utils.py
 Contains varies helper and utility functions
 """
 
-from file_handler import *
+from settings_handler import *
 
-position_type, filing_status, pay_cycle = handle()
+# position_type, filing_status, pay_cycle = handle()
 
 def request_info():
     rate_of_pay = input("How much do you make per hour?\n>: ")
@@ -16,7 +16,10 @@ def request_info():
 
 
 def calculate_weekly_gross(rate_of_pay, hours_worked):
-    if position_type == "hourly":
+    contents = get_contents()
+    settings = parse_settings(contents)
+
+    if settings.get("position_type") == "hourly":
         if int(hours_worked) > 40:
             overtime_hours = int(hours_worked) - 40
             weekly_income = (int(rate_of_pay) * overtime_hours * 1.5) + (int(rate_of_pay) * 40)
@@ -25,8 +28,16 @@ def calculate_weekly_gross(rate_of_pay, hours_worked):
         
         return weekly_income
 
-    elif position_type == "salary" or position_type == "contractor":
+    elif settings.get("position_type") == "salary" or settings.get("position_type") == "contract":
         weekly_income = int(hours_worked) * int(rate_of_pay)
 
         return weekly_income
-        
+    
+def calculate_monthly_gross(rate_of_pay, hours_worked):
+    pass
+
+def annualized_net():
+    pass
+
+def populate_settings():
+    pass

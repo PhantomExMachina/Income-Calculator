@@ -8,7 +8,7 @@
         {"min": 501, "max": 3000, "rate": 0.04},
         {"min": 3001, "max": null, "rate": 0.05}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 1000, "rate": 0.02},
         {"min": 1001, "max": 6000, "rate": 0.04},
         {"min": 6001, "max": null, "rate": 0.05}
@@ -29,7 +29,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.025}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.025}
       ],
       "head_of_household": [
@@ -43,7 +43,7 @@
         {"min": 0, "max": 4500, "rate": 0.02},
         {"min": 4501, "max": null, "rate": 0.039}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 9000, "rate": 0.02},
         {"min": 9001, "max": null, "rate": 0.039}
       ],
@@ -67,7 +67,7 @@
         {"min": 721315, "max": 1000000, "rate": 0.123},
         {"min": 1000001, "max": null, "rate": 0.133}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 21512, "rate": 0.01},
         {"min": 21513, "max": 50998, "rate": 0.02},
         {"min": 50999, "max": 80490, "rate": 0.04},
@@ -96,7 +96,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.044}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.044}
       ],
       "head_of_household": [
@@ -115,7 +115,7 @@
         {"min": 250001, "max": 500000, "rate": 0.069},
         {"min": 500001, "max": null, "rate": 0.0699}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 20000, "rate": 0.02},
         {"min": 20001, "max": 100000, "rate": 0.045},
         {"min": 100001, "max": 200000, "rate": 0.055},
@@ -145,7 +145,7 @@
         {"min": 25001, "max": 60000, "rate": 0.0555},
         {"min": 60001, "max": null, "rate": 0.066}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 2000, "rate": 0.022},
         {"min": 2001, "max": 5000, "rate": 0.039},
         {"min": 5001, "max": 10000, "rate": 0.048},
@@ -172,7 +172,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.0539}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.0539}
       ],
       "head_of_household": [
@@ -196,7 +196,7 @@
         {"min": 275001, "max": 325000, "rate": 0.11},
         {"min": 325001, "max": null, "rate": 0.11}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 19200, "rate": 0.014},
         {"min": 19201, "max": 28800, "rate": 0.032},
         {"min": 28801, "max": 38400, "rate": 0.055},
@@ -232,7 +232,7 @@
         {"min": 0, "max": 4673, "rate": 0.0},
         {"min": 4674, "max": null, "rate": 0.05695}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 9346, "rate": 0.0},
         {"min": 9347, "max": null, "rate": 0.05695}
       ],
@@ -247,7 +247,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.0495}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.0495}
       ],
       "head_of_household": [
@@ -260,7 +260,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.03}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.03}
       ],
       "head_of_household": [
@@ -273,7 +273,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.038}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.038}
       ],
       "head_of_household": [
@@ -287,7 +287,7 @@
         {"min": 0, "max": 23000, "rate": 0.052},
         {"min": 23001, "max": null, "rate": 0.0558}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 46000, "rate": 0.052},
         {"min": 46001, "max": null, "rate": 0.0558}
       ],
@@ -302,7 +302,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.04}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.04}
       ],
       "head_of_household": [
@@ -315,7 +315,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.03}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.03}
       ],
       "head_of_household": [
@@ -330,7 +330,7 @@
         {"min": 26801, "max": 63450, "rate": 0.0675},
         {"min": 63451, "max": null, "rate": 0.0715}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 53600, "rate": 0.058},
         {"min": 53601, "max": 126900, "rate": 0.0675},
         {"min": 126901, "max": null, "rate": 0.0715}
@@ -354,7 +354,7 @@
         {"min": 150001, "max": 250000, "rate": 0.055},
         {"min": 250001, "max": null, "rate": 0.0575}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 1000, "rate": 0.02},
         {"min": 1001, "max": 2000, "rate": 0.03},
         {"min": 2001, "max": 3000, "rate": 0.04},
@@ -382,7 +382,7 @@
         {"min": 0, "max": 1083150, "rate": 0.05},
         {"min": 1083151, "max": null, "rate": 0.09}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 1083150, "rate": 0.05},
         {"min": 1083151, "max": null, "rate": 0.09}
       ],
@@ -397,7 +397,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.0425}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.0425}
       ],
       "head_of_household": [
@@ -413,7 +413,7 @@
         {"min": 106991, "max": 198630, "rate": 0.0785},
         {"min": 198631, "max": null, "rate": 0.0985}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 65140, "rate": 0.0535},
         {"min": 65141, "max": 213980, "rate": 0.068},
         {"min": 213981, "max": 397260, "rate": 0.0785},
@@ -433,7 +433,7 @@
         {"min": 0, "max": 10000, "rate": 0.0},
         {"min": 10001, "max": null, "rate": 0.044}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 10000, "rate": 0.0},
         {"min": 10001, "max": null, "rate": 0.044}
       ],
@@ -455,7 +455,7 @@
         {"min": 7879, "max": 9191, "rate": 0.047},
         {"min": 9192, "max": null, "rate": 0.047}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 1313, "rate": 0.02},
         {"min": 1314, "max": 2626, "rate": 0.025},
         {"min": 2627, "max": 3939, "rate": 0.03},
@@ -483,7 +483,7 @@
         {"min": 0, "max": 21100, "rate": 0.047},
         {"min": 21101, "max": null, "rate": 0.059}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 21100, "rate": 0.047},
         {"min": 21101, "max": null, "rate": 0.059}
       ],
@@ -501,7 +501,7 @@
         {"min": 24121, "max": 38870, "rate": 0.0501},
         {"min": 38871, "max": null, "rate": 0.052}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 8060, "rate": 0.0246},
         {"min": 8061, "max": 48240, "rate": 0.0351},
         {"min": 48241, "max": 77740, "rate": 0.0501},
@@ -534,7 +534,7 @@
         {"min": 500001, "max": 1000000, "rate": 0.0897},
         {"min": 1000001, "max": null, "rate": 0.1075}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 20000, "rate": 0.014},
         {"min": 20001, "max": 50000, "rate": 0.0175},
         {"min": 50001, "max": 70000, "rate": 0.0245},
@@ -565,7 +565,7 @@
         {"min": 66501, "max": 210000, "rate": 0.049},
         {"min": 210001, "max": null, "rate": 0.059}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 11000, "rate": 0.015},
         {"min": 11001, "max": 33000, "rate": 0.032},
         {"min": 33001, "max": 67000, "rate": 0.043},
@@ -596,7 +596,7 @@
         {"min": 5000001, "max": 25000000, "rate": 0.109},
         {"min": 25000001, "max": null, "rate": 0.109}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 17150, "rate": 0.04},
         {"min": 17151, "max": 23600, "rate": 0.045},
         {"min": 23601, "max": 27900, "rate": 0.0525},
@@ -625,7 +625,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.0425}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.0425}
       ],
       "head_of_household": [
@@ -640,7 +640,7 @@
         {"min": 47151, "max": 238200, "rate": 0.0195},
         {"min": 238201, "max": null, "rate": 0.025}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 78775, "rate": 0.0},
         {"min": 78776, "max": 289975, "rate": 0.0195},
         {"min": 289976, "max": null, "rate": 0.025}
@@ -659,7 +659,7 @@
         {"min": 26051, "max": 100000, "rate": 0.0275},
         {"min": 100001, "max": null, "rate": 0.035}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 26050, "rate": 0.0},
         {"min": 26051, "max": 100000, "rate": 0.0275},
         {"min": 100001, "max": null, "rate": 0.035}
@@ -681,7 +681,7 @@
         {"min": 4901, "max": 7200, "rate": 0.0375},
         {"min": 7201, "max": null, "rate": 0.0475}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 2000, "rate": 0.0025},
         {"min": 2001, "max": 5000, "rate": 0.0075},
         {"min": 5001, "max": 7500, "rate": 0.0175},
@@ -707,7 +707,7 @@
         {"min": 11051, "max": 125000, "rate": 0.0875},
         {"min": 125001, "max": null, "rate": 0.099}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 8800, "rate": 0.0475},
         {"min": 8801, "max": 22100, "rate": 0.0675},
         {"min": 22101, "max": 250000, "rate": 0.0875},
@@ -726,7 +726,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.0307}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.0307}
       ],
       "head_of_household": [
@@ -741,7 +741,7 @@
         {"min": 79901, "max": 181650, "rate": 0.0475},
         {"min": 181651, "max": null, "rate": 0.0599}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 159800, "rate": 0.0375},
         {"min": 159801, "max": 363300, "rate": 0.0475},
         {"min": 363301, "max": null, "rate": 0.0599}
@@ -760,7 +760,7 @@
         {"min": 3561, "max": 17830, "rate": 0.03},
         {"min": 17831, "max": null, "rate": 0.062}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 7120, "rate": 0.0},
         {"min": 7121, "max": 35660, "rate": 0.03},
         {"min": 35661, "max": null, "rate": 0.062}
@@ -789,7 +789,7 @@
       "single": [
         {"min": 0, "max": null, "rate": 0.0455}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": null, "rate": 0.0455}
       ],
       "head_of_household": [
@@ -805,7 +805,7 @@
         {"min": 116001, "max": 242000, "rate": 0.076},
         {"min": 242001, "max": null, "rate": 0.0875}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 95800, "rate": 0.0335},
         {"min": 95801, "max": 232000, "rate": 0.066},
         {"min": 232001, "max": 484000, "rate": 0.076},
@@ -827,7 +827,7 @@
         {"min": 5001, "max": 17000, "rate": 0.05},
         {"min": 17001, "max": null, "rate": 0.0575}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 6000, "rate": 0.02},
         {"min": 6001, "max": 10000, "rate": 0.03},
         {"min": 10001, "max": 34000, "rate": 0.05},
@@ -847,7 +847,7 @@
         {"min": 0, "max": 250000, "rate": 0.0},
         {"min": 250001, "max": null, "rate": 0.07}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 500000, "rate": 0.0},
         {"min": 500001, "max": null, "rate": 0.07}
       ],
@@ -866,7 +866,7 @@
         {"min": 40001, "max": 60000, "rate": 0.0444},
         {"min": 60001, "max": null, "rate": 0.0482}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 20000, "rate": 0.0222},
         {"min": 20001, "max": 50000, "rate": 0.0296},
         {"min": 50001, "max": 80000, "rate": 0.0333},
@@ -890,7 +890,7 @@
         {"min": 29371, "max": 323290, "rate": 0.053},
         {"min": 323291, "max": null, "rate": 0.0765}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 29360, "rate": 0.035},
         {"min": 29361, "max": 58740, "rate": 0.044},
         {"min": 58741, "max": 646580, "rate": 0.053},
@@ -919,7 +919,7 @@
         {"min": 500001, "max": 1000000, "rate": 0.0975},
         {"min": 1000001, "max": null, "rate": 0.1075}
       ],
-      "married": [
+      "married_filing_jointly": [
         {"min": 0, "max": 10000, "rate": 0.04},
         {"min": 10001, "max": 40000, "rate": 0.06},
         {"min": 40001, "max": 60000, "rate": 0.065},

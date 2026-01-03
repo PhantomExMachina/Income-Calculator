@@ -3,13 +3,21 @@ Income Calculator
 By Matthew Monroe (GhostExMachina)
 """
 
-from file_handler import *
+from settings_handler import *
 from utils import *
+
+contents = create_settings()
+settings = parse_settings(contents)
+settings = solve_undefined(settings)
+write_settings(settings)
+
 
 rate_of_pay, hours_worked = request_info()
 weekly_income = calculate_weekly_gross(rate_of_pay, hours_worked)
 
 print(f"Gross income this week: ${weekly_income}")
+print(f"Net income this week: ${None}")
+
 
 # Planned structure:
 

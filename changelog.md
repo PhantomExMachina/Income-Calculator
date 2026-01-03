@@ -35,3 +35,12 @@ Initial Working Version
 - Created utils.py
 - Refactored main.py, moved input logic and conditional logic to utils.py
 - Finished state_income_brackets.json (Giving chatgpt the credit for this. WAY too much repetitive typing for my taste.)
+
+## 0.3.2 - 2026-01-01
+- Changed all instances of '"married"' in state_income_brackets.json to '"married_filing_jointly"' to better align with patterns in federal_income_brackets.json
+- Major changes to the file handling logic, but not purpose. Added a number of new functions that validate the settings.txt is structured properly, and if not, rewrites the file with the appropriate structure.
+- The above changes have inadvertently broken utils.py, but realistically, most of the code needs to be rewritten for future proofing.
+
+## 0.4.0 - 2026-01-02
+- renamed file_handler.py to settings_handler.py
+- Finished input functions + input sanitation and normalization in settings_handler.py
