@@ -41,6 +41,13 @@ Initial Working Version
 - Major changes to the file handling logic, but not purpose. Added a number of new functions that validate the settings.txt is structured properly, and if not, rewrites the file with the appropriate structure.
 - The above changes have inadvertently broken utils.py, but realistically, most of the code needs to be rewritten for future proofing.
 
-## 0.4.0 - 2026-01-02
+## 0.3.3 - 2026-01-02
+- Fixed all issues with utils.py
 - renamed file_handler.py to settings_handler.py
 - Finished input functions + input sanitation and normalization in settings_handler.py
+
+## 0.3.4 - 2026-01-04
+- Added mappings.py - this will contain any dictionary style mapping for use in this project.
+- Defined pay_cycle_map within mappings.py, which just assigns the annual paycycle count based on pay_cycle type.
+- Defined get_annual_paycheck_count() - a function that gets the annual paycheck count from settings.pay_cycle > mappings.pay_cycle_map("pay_cycle")
+- Added a few new functions for calculating static information such as weekly and annual base pay, annualized pay based on weekly pay + overtime, paycheck base pay, etc.

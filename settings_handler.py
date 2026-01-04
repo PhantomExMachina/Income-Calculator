@@ -4,7 +4,16 @@ file_handler.py
 This file looks for, reads from, and updates the settings.txt file as needed.
 """
 
-
+EXPECTED_STRUCTURE = {
+    "position_type": lambda s: position_type(s),
+    "filing_status": lambda s: filing_status(s),
+    "pay_cycle": lambda s: pay_cycle(s),
+    "401k": lambda s: _401k(s),
+    "share_program": lambda s: share_program(s),
+    "insurance_frequency": lambda s: insurance_frequency(s),
+    "insurance_premium": lambda s: insurance_premium(s),
+    "insurance_tax": lambda s: insurance_tax(s)
+}
 
 def get_contents(file="settings.txt"):
     try:
@@ -54,7 +63,7 @@ def solve_undefined(settings):
         handler = EXPECTED_STRUCTURE.get(key)
         if handler is None:
             continue
-        settings[key] = handler()  # store the return value
+        settings[key] = handler(settings)  # store the return value
 
     return settings
 
@@ -80,7 +89,7 @@ def write_settings(settings, file="settings.txt"):
     
 # ------ settings input functions ------#
 
-def position_type():
+def position_type(settings):
     while True:
         answer = input("What kind of employee are you?\n\nA: Hourly\nB: Salary\nC: Contract\n\n>: ").strip().lower()
         if answer == "a" or answer == "hourly" or answer == "1":
@@ -92,7 +101,7 @@ def position_type():
         print("Invalid response.\n\n")
 
 
-def filing_status():
+def filing_status(settings):
     while True:
         answer = input("What is your filing status?\n\nA: Single\nB: Married, filing jointly\nC: Head of household\n\n>: ").strip().lower()
         if answer == "a" or answer == "1" or answer == "single":
@@ -103,7 +112,7 @@ def filing_status():
             return "head_of_household"
         print("Invalid response.\n\n")
 
-def pay_cycle():
+def pay_cycle(settings):
     while True:
         answer = input("What type of pay cycle are you on?\n\nA: Weekly\nB: Bi-weekly\nC: Semi-monthly\nD: Monthly\nE: Other\n\n>: ").strip().lower()
         if answer == "a" or answer == "1" or answer == "weekly":
@@ -118,9 +127,9 @@ def pay_cycle():
             return "other"
         print("Invalid response.\n\n")
 
-def _401k():
+def _401k(settings):
     while True:
-        answer = input("How much are you contributing (percentage, not dollar-ammount) per paycheck to your 401k? (Enter as a decimal, such as 0.05 for 5%, or 0.00 for no contribution)\n\n>: ").strip().lower()
+        answer = input("401K: How much are you contributing per paycheck to your 401k? (Enter as a decimal, such as 0.05 for 5%, or 0.00 for no contribution)\n\n>: ").strip()
         try:
             if answer.endswith("%"):
                 answer = answer.rstrip("%")
@@ -137,9 +146,9 @@ def _401k():
             print("Invalid response.\n\n")
 
 
-def share_program():
+def share_program(settings):
     while True:
-        answer = input("How much are you contributing per paycheck toward an employee stock program? (Enter as a decimal, such as 0.05 for 5%, or 0.00 for no contribution)\n\n>: ").strip().lower()
+        answer = input("Stock Program: How much are you contributing per paycheck toward an employee stock program? (Enter as a decimal, such as 0.05 for 5%, or 0.00 for no contribution)\n\n>: ").strip()
         try:
             if answer.endswith("%"):
                 answer = answer.rstrip("%")
@@ -155,10 +164,52 @@ def share_program():
         except(ValueError):
             print("Invalid response.\n\n")
 
-EXPECTED_STRUCTURE = {
-    "position_type": position_type,
-    "filing_status": filing_status,
-    "pay_cycle": pay_cycle,
-    "401k": _401k,
-    "share_program": share_program,
-}
+def insurance_frequency(settings):
+    while True:
+        answer_1 = input("Do you pay for an employer provided health insurance premium?\n\nA: Yes\nB: No\n\n>: ").strip().lower()
+        if answer_1 == "a" or answer_1 == "1" or answer_1 == "yes":
+            answer_2 = input("How often is your deduction billed?\n\nA: Per pay check\nB: Monthly (If you are paid monthly, select this option)\nC: Every other paycheck\nD: Other\n\n>: ").strip().lower()
+            if answer_2 == "a" or answer_2 == "1" or answer_2 == "per paycheck":
+                return "per_paycheck"
+            elif answer_2 == "b" or answer_2 == "2" or answer_2 == "monthly":
+                return "monthly"
+            elif answer_2 == "c" or answer_2 == "3" or answer_2 == "every other paycheck":
+                return "every_other_paycheck"
+            elif answer_2 == "d" or answer_2 == "4" or answer_2 == "other":
+                return "other"
+            else:
+                print("invalid response")
+                continue
+        elif answer_1 == "b" or answer_1 == "2" or answer_1 == "no":
+            return "n/a"
+        else:
+            print("Invalid response.")
+            continue
+
+def insurance_premium(settings):
+    if settings.get("insurance_frequency") == 'n/a':
+        return 'n/a'
+    while True:
+        try: 
+            answer = input("How much is your premium?\n\n> ").strip()
+            if answer.startswith("$"):
+                answer = answer.lstrip("$")
+            if float(answer) < 0:
+                print("Invalid response.")
+                continue
+
+            return float(answer)
+        except ValueError:
+            print("Invalid response.")
+
+def insurance_tax(settings):
+    if settings.get("insurance_frequency") == 'n/a':
+        return 'n/a'
+    while True:
+        answer = input("Is your insurance premium payment pre-tax or post-tax?\n\nA: Pre-tax (Most common)\nB: Post-tax\n\n>: ").strip().lower()
+        if answer == "a" or answer == "1" or answer == "pre-tax" or answer == "pretax" or answer == "pre":
+            return "pre_tax"
+        if answer == "b" or answer == "2" or answer == "post-tax" or answer == "posttax" or answer == "post":
+            return "post_tax"
+        print("Invalid response.")
+
