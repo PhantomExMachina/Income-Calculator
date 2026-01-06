@@ -6,14 +6,34 @@ This file looks for, reads from, and updates the settings.txt file as needed.
 
 EXPECTED_STRUCTURE = {
     "position_type": lambda s: position_type(s),
+    "rate_of_pay": lambda s: rate_of_pay(s),
+    # "shift_differential": lambda s: shift_differential(s),
+    # "bonus": lambda s: bonus(s),                                          # This should not be static and remembered. Need to handle bonuses elsewhere.
+    "commission": lambda s: commission(s),                                # This should not be static and remembered. Need to handle bonuses elsewhere.
+    "tips": lambda s: tips(s),                                            # This should not be static and remembered. Need to handle bonuses elsewhere.
+    # "holiday_pay": lambda s: holiday_pay(s),                              # This should not be static and remembered. Need to handle bonuses elsewhere.
+    # "pto": lambda s: pto(s),                                              # This should not be static and remembered. Need to handle bonuses elsewhere.
     "filing_status": lambda s: filing_status(s),
     "pay_cycle": lambda s: pay_cycle(s),
     "401k": lambda s: _401k(s),
-    "share_program": lambda s: share_program(s),
+    # "403b": lambda s: _403b(s),
+    # "457": lambda s: _457(s),
+    # "pension": lambda s: pension(s),
+    "hsa": lambda s: hsa(s),
+    "fsa": lambda s: fsa(s),
+    "espp": lambda s: espp(s),
     "insurance_frequency": lambda s: insurance_frequency(s),
     "insurance_premium": lambda s: insurance_premium(s),
-    "insurance_tax": lambda s: insurance_tax(s)
+    "insurance_tax": lambda s: insurance_tax(s),
+    "tuition_repayment": lambda s: tuition_repayment(s),
+    "child_support": lambda s: child_support(s),
+    # "wage_levy": lambda s: wage_levy(s),
+    # "deduction": lambda s: deduction(s),
 }
+
+# ------------------------------------
+#              File i/o
+# ------------------------------------
 
 def get_contents(file="settings.txt"):
     try:
@@ -86,8 +106,9 @@ def write_settings(settings, file="settings.txt"):
         f.write("\n".join(lines) + "\n")
 
 
-    
-# ------ settings input functions ------#
+# ------------------------------------- #
+#            input functions            
+# ------------------------------------- #
 
 def position_type(settings):
     while True:
@@ -100,6 +121,37 @@ def position_type(settings):
             return "contract"
         print("Invalid response.\n\n")
 
+def rate_of_pay(settings):
+    while True:
+        answer = input("What is your rate of pay?\n\n>: ").strip()
+        try:
+            if float(answer) <= 0:
+                print("Invalid response.")
+                continue
+            return float(answer)
+        except ValueError:
+            print("Invalid response.")
+
+def shift_differential(settings):
+    pass
+
+def commission(settings):
+    while True:
+        answer = input("\n\nDo you make commission?\n\nA: Yes\nB: No\n\n>: ").strip().lower()
+        if answer == "a" or answer == "1" or answer == "yes":
+            return "true"
+        elif answer == "b" or answer == "2" or answer == "no":
+            return "n/a"
+        print("Invalid response.\n\n")
+
+def tips(settings):
+    while True:
+        answer = input("Do you receive tips?\n\nA: Yes\nB: No\n\n>: ").strip().lower()
+        if answer == "a" or answer == "1" or answer == "yes":
+            return "true"
+        elif answer == "b" or answer == "2" or answer == "no":
+            return "n/a"
+        print("Invalid response.")
 
 def filing_status(settings):
     while True:
@@ -146,7 +198,7 @@ def _401k(settings):
             print("Invalid response.\n\n")
 
 
-def share_program(settings):
+def espp(settings):
     while True:
         answer = input("Stock Program: How much are you contributing per paycheck toward an employee stock program? (Enter as a decimal, such as 0.05 for 5%, or 0.00 for no contribution)\n\n>: ").strip()
         try:
@@ -213,3 +265,79 @@ def insurance_tax(settings):
             return "post_tax"
         print("Invalid response.")
 
+def hsa(settings):
+    while True: 
+        answer = input("\n\nDo you contribute to a Health Savings Account (HSA)?\n\nA: Yes\nB: No\n\n>: ").strip().lower()
+        if answer == "a" or answer == "1" or answer == "yes":
+            try:
+                answer = input("How much are you contributing each paycheck?\n\n>: ").strip()
+                if answer.startswith("$"):
+                    answer = answer.lstrip("$")
+                if float(answer) <= 0:
+                    print("Invalid response.")
+                    continue
+                return float(answer)
+            except ValueError:
+                print("Invalid response")
+                continue
+        if answer == "b" or answer == "2" or answer == "no":
+            return 'n/a'
+        print("Invalid Response")
+
+def fsa(settings):
+    while True: 
+        answer = input("\n\nDo you contribute to a Flexible Spending Account (FSA)?\n\nA: Yes\nB: No\n\n>: ").strip().lower()
+        if answer == "a" or answer == "1" or answer == "yes":
+            try:
+                answer = input("How much are you contributing each paycheck?\n\n>: ").strip()
+                if answer.startswith("$"):
+                    answer = answer.lstrip("$")
+                if float(answer) <= 0:
+                    print("Invalid response.")
+                    continue
+                return float(answer)
+            except ValueError:
+                print("Invalid response")
+                continue
+        if answer == "b" or answer == "2" or answer == "no":
+            return 'n/a'
+        print("Invalid Response")
+
+
+def tuition_repayment(settings):
+    while True:
+        answer = input("Do you pay for tuition?\n\nA: Yes\nB: No\n\n>: ").strip().lower()
+        if answer == "a" or answer == "1" or answer == "yes":
+            try: 
+                answer = input("\n\nHow much are you paying for tuition per paycheck?\n\n>: ").strip()
+                if answer.startswith("$"):
+                    answer = answer.lstrip("$")    
+                if float(answer) <= 0:
+                    print("Invalid response.")
+                    continue
+                return float(answer)
+            except ValueError:
+                print("Invalid response.")
+                continue
+        if answer == "b" or answer == "2" or answer == "no":
+            return 'n/a'
+        print("Invalid response")
+
+def child_support(settings):
+    while True:
+        answer = input("\n\nDo you pay for child support directly from your paycheck?\n\nA: Yes\nB: No\n\n>: ").strip().lower()
+        if answer == "a" or answer == "1" or answer == "yes":
+            try:
+                answer = input("How much are you paying for child support per paycheck?\n\n>: ").strip()
+                if answer.startswith("$"):
+                    answer = answer.lstrip("$")
+                if float(answer) <= 0:
+                    print("Invalid response")
+                    continue
+                return float(answer)
+            except ValueError:
+                print("Invalid response")
+        elif answer == "b" or answer == "2" or answer == "no":
+            return 'n/a'
+        print("Invalid response.")
+            

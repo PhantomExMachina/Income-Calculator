@@ -51,3 +51,19 @@ Initial Working Version
 - Defined pay_cycle_map within mappings.py, which just assigns the annual paycycle count based on pay_cycle type.
 - Defined get_annual_paycheck_count() - a function that gets the annual paycheck count from settings.pay_cycle > mappings.pay_cycle_map("pay_cycle")
 - Added a few new functions for calculating static information such as weekly and annual base pay, annualized pay based on weekly pay + overtime, paycheck base pay, etc.
+- Added a new insurance_frequency and insurance_deductible field to settings.txt and correlating functions in settings_handler.py, not yet mapped to paycheck calcs.
+- Added a pre-tax / post-tax field to settings.txt for insurance premiums.
+- Fixed some minor bugs
+- Fixed some minor inconsistencies in langauge
+- Changed handler() to pass settings, so that all settings functions now accept the settings dictionary, though most will not use it. 
+  This improves several functions that were opening and closing the settings.file needlessly instead of just reading from memory.
+- Moved EXPECTED_STRUCTURE to the top of the file for better readability and converted each value to a lambda which only calls the contained function when necessary.
+  Maybe this wasn't the best design choice to go with, but for now, I'm okay with it. I might pivot away in a future update.
+
+## 0.3.5 - 2026-01-04
+- Added many yet-to-be-implemented lambda calls for functions and settings that will eventually be defined. Working on these one at a time.
+- Refactored a bit. The script no longer treats rate of pay as a session variable and instead treats it statically by saving it to settings.txt and only asking once.
+- Added support for tuition repayment as a function and key in settings.
+- Added support for child support as a function and key in settings.
+- Added support for FSA as a function and key in settings.
+- Added support for HSA as a function and key in settings.

@@ -20,3 +20,4 @@ This project is aimed at becoming a simple app on the iOS and Android play store
 - Factor in state level income tax brackets
 - Factor in overtime laws by state (double-time states)
 - Allow users to keep track of regularly-occurring monthly expenses
+
